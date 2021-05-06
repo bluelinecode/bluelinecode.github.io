@@ -1,6 +1,15 @@
-@media only screen and (min-width: 60 em) {
-    .wrapper{
+@media only screen and (min-width: 45em) {
+   
+    .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 5px 5px;
+      }
+      .visualhierarchy { 
+          grid-area: 1 / 1 / 2 / 2; 
     }
+      .hickslaw { grid-area: 1 / 2 / 2 / 3; }
+      .fittslaw { grid-area: 1 / 3 / 2 / 4; }
+
 }
