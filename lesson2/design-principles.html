@@ -10,27 +10,43 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Bryant Cook</h1>
+    </header>
     <main>
-        <div class="visualhierarchy">
-            <h3>Visual Hierarchy</h3>
-                <p><b>Interactive Design Foundation</b></p>
-                <img src="#" alt="Visual Hierarchy Sample - Tesla"/></br>
-                <a href="https://www.interaction-design.org/literature/topics/visual-hierarchy">Visual Hierarchy</a>
-        </div>
-        <div class="hickslaw">
-            <h3>Hick's Law</h3>
-                <p><b>Interactive Design Foundation</b></p>
-                <img src="images/tesla2.PNG" alt="Hick's Law Sample - "/></br>
-                <a href="#">Hick's Law</a>
-        </div>
-        <div class="fittslaw">
-            <h3>Fitt's Law</h3>
-                <p><b>Interactive Design Foundation</b></p>
-                <img src="#" alt="Fitt's Law Sample - "/></br>
-                <a href="#">Fitt's Law</a>
-        </div>
+        <div class="wrapper">
+            <div class="visualhierarchy">
+                <h3>Visual Hierarchy</h3>
+                    <p><b>Interactive Design Foundation</b></p>
+                    <img class= "apple" src="images/apple.png" alt="Visual Hierarchy Sample - Tesla"/></br>
+                    <p>In this example, the heading is very large and stark contrast to it's background which catches the eye. The screen displays vibrant color and is offset to maintain the eye position on the product. The text is positioned close together to appear to be related and the use of whitespace around the product contains it as seperate from the lower products.</p>
+                    <a href="https://www.interaction-design.org/literature/topics/visual-hierarchy">Visual Hierarchy</a>
+            </div>
+            </br>
+            <div class="hickslaw">
+                <h3>Hick's Law</h3>
+                    <p><b>Interactive Design Foundation</b></p>
+                    <img class="tesla2" src="images/tesla2.PNG" alt="Hick's Law Sample - Tesla Home Page"/></br>
+                    <p>Tesla does a great job at limiting the amount of choices the consumer has in front of them. They simply allow for ordering or viewing additional inventory in very plain looking buttons. There is not much to think about as it relates to Hick's Law.</p>
+                    <a href="https://www.interaction-design.org/literature/topics/hick-s-law">Hick's Law</a>
+            </div>
+            </br>
+            <div class="fittslaw">
+                <h3>Fitt's Law</h3>
+                    <p><b>Interactive Design Foundation</b></p>
+                    <img class="google" src="images/google.png" alt="Fitt's Law Sample - Google Home Page "/></br>
+                    <p>Google does a great job by using the center pixel to maintain their simplistic search box which feels natural to view and is easy to navigate to from any postion which the mouse or finger could potentially be in. </p>
+                    <a href="https://www.interaction-design.org/literature/topics/fitts-law">Fitt's Law</a>
+            </div>
+        </div>    
     </main>
+    <footer>&copy; <span id="theyear"></span>| Bryant Cook | Vernal, Utah | 
+        <p>Last Modified: <span id="lastmod"></span></p>
+      </footer>
+      <script src="js/index.js"></script>
 </body>
 </html>

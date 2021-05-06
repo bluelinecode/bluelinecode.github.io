@@ -8,21 +8,33 @@ header, main, footer {
 
 }
 
-header, 
-footer {
+header img {
+
+    float: right;
+    max-height: 250px;
+}
+
+header, footer {
     border: 1px solid #bbb;
     padding: 1rem; 
     background-color: #bed;
 }
 
-header img{
+/*header img{
     float: right;
     width: 200px;
     height: auto;
-}
+}*/
 
 h1 {
     font-size: 3rem;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+
+p, li {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
 }

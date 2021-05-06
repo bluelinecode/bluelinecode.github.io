@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+header, main, footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/*.apple {
+    max-width: 80%;
+    max-height: auto;
+}
+.tesla2 {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.google {
+    max-width: 80%;
+    max-height: auto;
+}*/
+.visualhierarchy, .hickslaw, .fittslaw {
+    background-color: #e0ebeb;
+}
+
+header, footer {
+    border: 1px solid #bbb;
+    padding: 1rem; 
+    background-color: #bed;
+}
+
+header {
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p, li, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
