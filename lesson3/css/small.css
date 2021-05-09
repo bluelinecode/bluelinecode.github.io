@@ -58,6 +58,11 @@ h3 {
 
     font-size: 20px;
 }
+
+.hhead {
+    text-align: center;
+
+}
  
 p, strong, ol {
     font-family: 'Nunito Sans', sans-serif;
