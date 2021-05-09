@@ -1,8 +1,16 @@
 @media screen and (min-width: 60em) {
+
     header, .pnav, main, footer {
-        max-width:1024px;
-        width:90%;
-        margin:0 auto;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
     }
+
+nav ul {
+    display: flex;
 }
 
+nav ul li {
+    flex: 1 1 100%;
+}
+}

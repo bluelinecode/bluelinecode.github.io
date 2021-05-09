@@ -1,7 +1,31 @@
 @media screen and (min-width: 32.5em) {
     header, .pnav, main, footer {
         max-width:800px;
-        width:90%;
+        width:100%;
         margin:0 auto;
     }
+
+nav{
+    display:flex;
+    padding:20px 0;
+    align-items: center;
+  }
+
+  nav ul{
+    display:flex;
+    list-style:none;
+    padding: 10px 40px;
+    width:40%;
+  }
+
+  nav ul li a {
+    color:#264653;
+    text-decoration: none;
+    flex: 1 1 100%;
+  }
+
+  li {
+      padding: 5vw;
+      align-content: center;
+  }
 }
