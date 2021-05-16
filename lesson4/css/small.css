@@ -26,6 +26,16 @@ h1 h2 h3 {
 .hero {
     background-color: rgb(243, 243, 243);
     padding: 5px 0;
+    display: flex;
+}
+
+.hero h3 {
+    justify-content: 2;
+}
+
+.heroimage {
+    display: flex;
+    align-content: flex-start;
 }
 
 .fiveday {
