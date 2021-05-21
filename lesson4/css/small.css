@@ -85,6 +85,14 @@ footer {
     font-style: italic;
 }
 
+.pancake {
+    display: none;
+}
+
+.pan {
+    display: block;
+}
+
 nav {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0 auto;
