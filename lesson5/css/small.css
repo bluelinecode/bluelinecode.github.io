@@ -33,7 +33,7 @@ h1 h2 h3 {
 
 .hero img{
     background-color: rgb(196, 240, 225);
-    padding: 5px 0;
+    padding: 0 0;
     display: flex;
     max-width: 100%;
     height: auto;
@@ -77,13 +77,54 @@ h1 h2 h3 {
     justify-content: center;
 }
 
+.map {
+    padding: 0 0;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
 .fiveday {
     background-color: rgb(196, 240, 225);
-    padding: 5px 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family:  'Merriweather', serif;
+    padding: 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.forecasthead {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196,240, 225);
+    margin-top:5px;
+    margin-bottom: 0;
+}
+
+.fdfb {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dow {
+    display: flex;
+    justify-content: center;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -95,6 +136,12 @@ footer {
     font-family: 'Merriweather', serif;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+#address {
+    display: flex;
+justify-content:center;
+    height: auto;
 }
 
 .contactlist {
