@@ -9,7 +9,3 @@ document.querySelector('#theyear').textContent = new Date().getFullYear();
 document.querySelector('#lastmod').textContent = document.lastModified;
 var d = new Date();
 document.getElementById("date").innerHTML = d;
-
-if (d.getDay() == ) {
-    document.querySelector(".pancake").style.display = "block";
-}

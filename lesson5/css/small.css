@@ -21,21 +21,60 @@ header img {
 
 h1 h2 h3 {
     font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
 }
 
-.hero {
-    background-color: rgb(243, 243, 243);
+#preston {
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero img{
+    background-color: rgb(196, 240, 225);
     padding: 5px 0;
     display: flex;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero h3 {
     justify-content: 2;
 }
 
-.heroimage {
+.summarybox {
+    align-items: center;
+    list-style-type: none;
+    background-color:rgb(250, 194, 184);
+    display: grid;
+    justify-content: center;
+}
+
+.summarybox h3 {
+    display:flex;
+    align-items: center;
+}
+
+.wslist {
+    list-style-type: none;
+}
+
+.wshead {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.articleimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.article h3 {
     display: flex;
-    align-content: flex-start;
+    justify-content: center;
 }
 
 .fiveday {
@@ -87,6 +126,13 @@ footer {
 
 .pancake {
     display: none;
+    align-content: center;
+    border: 2px solid rgb(0, 0, 0);
+    color:ivory;
+    background-color:grey;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 

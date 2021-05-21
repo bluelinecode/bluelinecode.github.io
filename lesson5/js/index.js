@@ -10,6 +10,6 @@ document.querySelector('#lastmod').textContent = document.lastModified;
 var d = new Date();
 document.getElementById("date").innerHTML = d;
 
-if (d.getDay() == ) {
+if (d.getDay() == 5) {
     document.querySelector(".pancake").style.display = "block";
 }
