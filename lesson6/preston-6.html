@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Now is a site for infromation gathering concerning the weather occurences in the state of Idaho.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Weather Now</title>
+</head>
+<body>
+    <header>
+        <img src="images/Rainumbrella.png" alt="weather icon">
+        <section class="headings">
+            <h1>Weather Now</h1>
+            <div class="motto">Weather when you need it!</div>
+        </section>
+
+
+    </header>
+    <main>
+        <div class="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="https://bluelinecode.github.io/">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+
+
+        </nav>
+        <h2 id="preston">Preston, Idaho</h2>
+        <div class="hero">
+            <img src="images/tetons.jpg" alt="Photo by Mariana Bobina from Pexels">
+            <aside>
+                <div  class="summarybox">
+                    <h3 class="wshead">Weather Summary</h3>
+                        <ul class="wslist">
+                            <li>Currently: Rain</li>
+                            <li>Temperature: 45°F</li>
+                            <li>Wind Speed: 3 mph</li>
+                            <li>Precipiation: 25%</li>
+                            <li>Humidity: 74%</li>
+                        </ul>
+                </div>
+            </aside>
+        </div>
+        <h3 class="forecasthead">Five Day Forecast</h3>
+        <section class="fiveday">
+            <div class="fdfb">
+                <div class="dow">Fri</div>
+                <img src="images/Optimized-rain.png" alt="Rain icon">
+                <div class="temp">45°F</div>
+            </div>
+            <div class="fdfb">
+                <div class="dow">Sat</div>
+                <img src="images/Optimized-rain.png" alt="Rain icon">
+                <div class="temp">48°F</div>
+            </div>
+            <div class="fdfb">
+                <div class="dow">Sun</div>
+                <img src="images/Optimized-sunny.png" alt="sun icon">
+                <div class="temp">58°F</div>
+            </div>
+            <div class="fdfb">
+                <div class="dow">Mon</div>
+                <img src="images/Optimized-sunny.png" alt="sun icon">
+                <div class="temp">68°F</div>
+            </div>
+            <div class="fdfb">
+                <div class="dow">Tue</div>
+                <img src="images/Optimized-sunny.png" alt="sun icon">
+                <div class="temp">72°F</div>
+            </div>
+
+            
+        </section>
+        <div class="article">
+            <h3>Summer Hiking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo nulla earum iste porro dolor expedita dolorum unde cum. Non placeat praesentium quasi nulla perspiciatis, nihil excepturi unde natus, officia repellendus nam culpa ipsa, adipisci quam cupiditate? Optio ut, distinctio beatae aliquid est quasi animi dolor autem ex id asperiores ea pariatur neque doloribus. Provident laborum, alias velit debitis suscipit nulla amet voluptatem magni nam voluptas accusamus culpa est ullam sint? Aliquid hic assumenda aperiam repudiandae natus placeat nemo suscipit.</p>
+            <img class="articleimg" src="images/hiking.jpg" alt="Man hiking - Photo by Andrei Tanase from Pexels">
+        </div>
+    </main>
+    <footer> 
+        <section>
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <ul class="contactlist">
+                    <li><a href="#"><img src="images/Facebook.png" alt="Facebook Icon"></a></li>
+                    <li><a href="#"><img src="images/Twitter.png" alt="Twitter Icon"></a></li>
+                </ul>
+            </div>
+        </section>
+           <!-- <div class="map">
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=preston%20idaho&key=AIzaSyDnVRU_Sc3O6gs-3pzRJf9SW2sGU3Jegik">
+                </iframe>
+            </div> -->
+            <div>
+                <p id="address">Weather Now Address:<br>100 N 255 E<br> Preston, Idaho</p>
+                <img class="map" src="images/preston.png" alt="Preston, Idaho town map">
+            </div>
+        &copy;<span id="theyear"></span>| Bryant Cook | Vernal, Utah | <p id="date"></p>
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
