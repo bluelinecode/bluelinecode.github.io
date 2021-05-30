@@ -42,16 +42,22 @@
         </nav>
         <h2 id="preston">Preston, Idaho</h2>
         <div class="hero">
-            <img src="images/tetons.jpg" alt="Photo by Mariana Bobina from Pexels">
+            <!--<img src="images/tetons.jpg" alt="Photo by Mariana Bobina from Pexels">-->
+            <picture>
+                <source srcset="../lesson6/images/franklinmid.jpeg" media="(min-width: 700px) and (max-width: 799px)">
+                <source srcset="../lesson6/images/wdd230_image_franklinOriginal.jpeg" media="(min-width: 800px) and (max-width: 2000px)">
+            <img class="heroimg" src="../lesson6/images/franklinsmall.jpeg" alt="Land and Sky"/>
+            </picture>
             <aside>
                 <div  class="summarybox">
                     <h3 class="wshead">Weather Summary</h3>
                         <ul class="wslist">
-                            <li>Currently: Rain</li>
-                            <li>Temperature: 45°F</li>
-                            <li>Wind Speed: 3 mph</li>
-                            <li>Precipiation: 25%</li>
-                            <li>Humidity: 74%</li>
+                            <li>Currently: <span class="outside">Rain</span></li>
+                            <li>Temperature: <span id="temp">45°F</span></li>
+                            <li>Wind Speed: <span id="speed">4 mph</span></li>
+                            <li>Precipiation: <span id="precipitation">25%</span></li>
+                            <li>Humidity: <span id="humidity">74%</span></li>
+                            <li>Windchill: <span id="windChill">&deg;</span></li>
                         </ul>
                 </div>
             </aside>
