@@ -6,6 +6,8 @@ main {
 }
 
 picture img {
-    filter: blur(0em)
+    filter: blur(0em);
 }
+
+
 
