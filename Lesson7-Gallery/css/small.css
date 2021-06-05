@@ -61,9 +61,12 @@ nav {
 	background-color: black;
 }
 
-main {
+.grid{
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 950px;
+    justify-items: center;
+    padding-left: 23%;
 }
 
 footer {

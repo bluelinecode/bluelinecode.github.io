@@ -1,12 +1,8 @@
 @media only screen and (min-width: 1000px) {
-    main {
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         -ms-grid-row-align: center;
         -ms-layout-grid: center;
     }
-}
-
-.column {
-    float:right
 }

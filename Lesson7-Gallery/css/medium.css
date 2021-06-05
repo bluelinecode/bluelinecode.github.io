@@ -3,7 +3,7 @@
         width: 60px;
     }
 
-	main {
+	.grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -20,14 +20,6 @@
 	}
 	.navigation li:first-child {
 		display: none;
-	}
-
-	.columm1 {
-		float:left
-	}
-
-	.column {
-		float: right;
 	}
 
 }
