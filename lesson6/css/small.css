@@ -28,7 +28,6 @@ h1 h2 h3 {
 #preston {
     display: flex;
     justify-content: center;
-
 }
 
 .hero img{
@@ -85,23 +84,11 @@ h1 h2 h3 {
 }
 
 .fiveday {
-    background-color: rgb(196, 240, 225);
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family:  'Merriweather', serif;
-    padding: 0 0;
-    max-width: 100%;
-    height: auto;
+    display: none;
 }
 
 .forecasthead {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(196,240, 225);
-    margin-top:5px;
-    margin-bottom: 0;
+    display: none;
 }
 
 .fdfb {

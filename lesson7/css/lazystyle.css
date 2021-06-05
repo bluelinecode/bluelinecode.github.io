@@ -6,7 +6,13 @@ main {
 }
 
 picture img {
-    filter: blur(0em);
+    border: 1px solid;
+    filter: blur(0.2em);
+    transition: filter 1s;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
 }
 
 
