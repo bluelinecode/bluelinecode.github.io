@@ -3,9 +3,9 @@ const imagesToLoad = document.querySelectorAll ("img[data-src]");
 
 
 const loadImages = (image) => {
-    Image.setAttribute("src", Image.getAttribute("data-src"));
-    Image.onload = () => {
-        Image.removeAttribute("data-src");
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {
+        image.removeAttribute("data-src");
     };
 }
 
