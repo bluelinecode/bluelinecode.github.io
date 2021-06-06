@@ -110,3 +110,13 @@ justify-content:center;
     flex-direction: column;
 }
 
+picture img {
+    border: 1px solid;
+    filter: blur(0em);
+    transition: filter 2s;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
