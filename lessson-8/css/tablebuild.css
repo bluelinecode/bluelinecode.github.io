@@ -1,0 +1,61 @@
+table, tfoot, th, td {
+    border: 1px solid black;
+    border-color: #d1d1d1;
+    border-collapse: collapse;
+    font-family: Ubuntu, sans-serif; 
+  }
+  
+  table {
+    box-shadow: 8px 5px 5px 0px #628ca6;
+  }
+  
+  table tr td {
+    padding: 5px;
+  }
+  
+  tfoot td {
+    background-color: #7fb9c2;
+    font-size: 80%;
+    padding: 2%;
+  }
+  
+  td {
+    text-align: center;
+    padding: 2px;
+  }
+  
+  h1 {
+    margin: 2px;
+    background-color: #7fb9c2;
+    padding: 2px;
+  }
+  
+  #novsales {
+    color: white;
+    background-color: #628ca6; 
+  }
+  
+  .categories {
+    background-color: #628ca6;
+    color: white;
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  thead td:nth-child(1) {
+     background-color: #7fb9c2;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #e7ffed;
+  }
+  
+  tr:nth-child(1) {
+    background-color: #628ca6;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e7f0ed;
+  }
+  
+  
