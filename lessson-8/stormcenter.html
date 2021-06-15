@@ -51,7 +51,7 @@
             <input type="date" name="date"></label><br><br>
     <!--Storm Type-->
         <label> Storm Type:
-            <select name="stormtype" id="selectstorm" onchange="selectResponse()" name="stormtype">
+            <select id="selectstorm" onchange="selectResponse()" name="stormtype">
                 <option value="" disabled selected>Select a Storm Type...</option>
                 <option value="Flash Flood">Flash Flood</option>
                 <option value="Hail">Hail</option>
@@ -60,7 +60,7 @@
                 <option value="Tornado">Tornado</option>
             </select></label> <br><br>
     <!-- Storm Severity-->
-        <label> Storm Severity:
+        <label> Storm Severity: </label>
             <input type="range" id="stormseverity" name="stormseverity" list="tickmarks" min="1" max="10">
             <datalist id="tickmarks">
                 <option value="1"></option>
@@ -76,8 +76,8 @@
             </datalist><br><br>
 
     <!-- Storm Region -->
-        <label> Storm Region: 
-            <select name="stormregion" id="selectregion" onchange="selectRegion()" name="region">
+        <label> Storm Region: </label>
+            <select id="selectregion" onchange="selectRegion()" name="region">
                 <option value="" disabled selected>Select Region...</option>
                 <option value="Preston">Preston</option>
                 <option value="Soda Springs">Soda Springs</option>
@@ -86,20 +86,18 @@
         </label> <br><br>
     <!-- User In Danger Level -->
         <label> User In Danger? </label>
-        <div class="radiobuttons">
+    <div class="radiobuttons">
         <input type="radio" id="dangerChoice1" name="dangerChoice" value="yes" checked> 
         <label for="yes">Yes</label>
         <input type="radio" id="dangerChoice2" name="dangerChoice" value="maybe">
         <label for="maybe">Maybe</label>
         <input type="radio" id="dangerChoice3" name="dangerChoice" value="no">
         <label for="no">No</label>
-        </div> 
-        </label><br><br> 
+    </div> <br><br> 
         
     <!-- Additional Info -->
-        <label> Additional Information/Comments:
-            <input type="textarea" name="comments"> 
-        </label><br><br>
+        <label> Additional Information/Comments:</label>
+        <textarea id="comments" name="comments" rows="3" cols="25">Add any additional information here.</textarea><br><br>
         
     <!-- Form Submission -->
         <label> <input type="button" action="submit.htm" value="submit" class="sbutton">
