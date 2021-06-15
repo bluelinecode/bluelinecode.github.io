@@ -35,6 +35,7 @@
         </ul>
     </nav>
     <section class="form">
+        <h2 id="report">Report Bad Weather</h2>
         <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last name:</label>
@@ -82,17 +83,16 @@
                 <option value="Preston">Preston</option>
                 <option value="Soda Springs">Soda Springs</option>
                 <option value="Fish Haven">Fish Haven</option>
-            </select>
-        </label> <br><br>
+            </select><br><br>
     <!-- User In Danger Level -->
         <label> User In Danger? </label>
     <div class="radiobuttons">
         <input type="radio" id="dangerChoice1" name="dangerChoice" value="yes" checked> 
-        <label for="yes">Yes</label>
+        <label for="yes" id="yes">Yes</label>
         <input type="radio" id="dangerChoice2" name="dangerChoice" value="maybe">
-        <label for="maybe">Maybe</label>
+        <label for="maybe" id="maybe">Maybe</label>
         <input type="radio" id="dangerChoice3" name="dangerChoice" value="no">
-        <label for="no">No</label>
+        <label for="no" id="no">No</label>
     </div> <br><br> 
         
     <!-- Additional Info -->
@@ -100,9 +100,8 @@
         <textarea id="comments" name="comments" rows="3" cols="25">Add any additional information here.</textarea><br><br>
         
     <!-- Form Submission -->
-        <label> <input type="button" action="submit.htm" value="submit" class="sbutton">
-        <form target="sbutton" action="/thanks.html" method="post" onSubmit="window.open('about:blank', 'sbutton','width=60%,height=60%');">
-        </label>
+        <input type="button" value="submit" class="sbutton">
+        <form target="sbutton" action="/thanks.html" method="post" onSubmit="window.open('about:blank', 'sbutton','width=60%,height=60%');"></form>
     </section>
     
     <footer> 

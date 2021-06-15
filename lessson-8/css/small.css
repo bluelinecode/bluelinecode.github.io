@@ -215,3 +215,7 @@ section.form {
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+#report {
+    display:block;
+}
