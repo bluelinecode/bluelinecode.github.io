@@ -12,4 +12,5 @@ document.getElementById("date").innerHTML = d;
 
 if (d.getDay() == 5) {
     document.querySelector(".pancake").style.display = "block";
+
 }
