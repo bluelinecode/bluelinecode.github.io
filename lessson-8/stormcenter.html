@@ -4,80 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Now is a site for infromation gathering concerning the weather occurences in the state of Idaho.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/stormcenter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-<!--email input-->
-    <label>Email:
-		<input type="email" name="email" placeholder="youremail@email.com"></label><br><br>
-<!--phone number-->
-    <label> Phone: <input type="tel" placeholder="###-###-####" name="phone"></label><br><br>
-<!--zip code-->
-    <label> Zip-Code: <input type="number" name="zipcode" required></label><br><br>
- <!-- storm date-->
-    <label> Storm Date: 
-        <input type="date" name="date"></label><br><br>
-<!--Storm Type-->
-    <label> Storm Type:
-		<select name="stormtype" id="selectstorm" onchange="selectResponse()" name="stormtype">
-			<option value="" disabled selected>Select a Storm Type...</option>
-			<option value="Flash Flood">Flash Flood</option>
-			<option value="Hail">Hail</option>
-			<option value="Hurricane">Hurricane</option>
-			<option value="Thunderstorm">Thunderstorm</option>
-            <option value="Tornado">Tornado</option>
-		</select></label> <br><br>
- <!-- Storm Severity-->
-    <label> Storm Severity:
-        <input type="range" id="stormseverity" name="stormseverity" list="tickmarks" min="1" max="10">
-        <datalist id="tickmarks">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10"></option>
-        </datalist><br><br>
+    <header>
+        <img src="images/Rainumbrella.png" alt="weather icon">
+        <section class="headings">
+            <h1>Weather Now</h1>
+            <div class="motto">Weather when you need it!</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="https://bluelinecode.github.io/">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <section class="form">
+        <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+    <!--email input-->
+        <label>Email:
+            <input type="email" name="email" placeholder="youremail@email.com"></label><br><br>
+    <!--phone number-->
+        <label> Phone: <input type="tel" placeholder="###-###-####" name="phone"></label><br><br>
+    <!--zip code-->
+        <label> Zip-Code: <input type="number" name="zipcode" required></label><br><br>
+    <!-- storm date-->
+        <label> Storm Date: 
+            <input type="date" name="date"></label><br><br>
+    <!--Storm Type-->
+        <label> Storm Type:
+            <select name="stormtype" id="selectstorm" onchange="selectResponse()" name="stormtype">
+                <option value="" disabled selected>Select a Storm Type...</option>
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+            </select></label> <br><br>
+    <!-- Storm Severity-->
+        <label> Storm Severity:
+            <input type="range" id="stormseverity" name="stormseverity" list="tickmarks" min="1" max="10">
+            <datalist id="tickmarks">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+            </datalist><br><br>
 
-<!-- Storm Region -->
-    <label> Storm Region: 
-		<select name="stormregion" id="selectregion" onchange="selectRegion()" name="region">
-			<option value="" disabled selected>Select Region...</option>
-			<option value="Preston">Preston</option>
-			<option value="Soda Springs">Soda Springs</option>
-			<option value="Fish Haven">Fish Haven</option>
-		</select>
-    </label> <br><br>
-<!-- User In Danger Level -->
-    <label> User In Danger? </label>
-    <div class="radiobuttons">
-      <input type="radio" id="dangerChoice1" name="dangerChoice" value="yes" checked> 
-      <label for="yes">Yes</label>
-      <input type="radio" id="dangerChoice2" name="dangerChoice" value="maybe">
-      <label for="maybe">Maybe</label>
-      <input type="radio" id="dangerChoice3" name="dangerChoice" value="no">
-      <label for="no">No</label>
-    </div> 
-    </label><br><br> 
+    <!-- Storm Region -->
+        <label> Storm Region: 
+            <select name="stormregion" id="selectregion" onchange="selectRegion()" name="region">
+                <option value="" disabled selected>Select Region...</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+        </label> <br><br>
+    <!-- User In Danger Level -->
+        <label> User In Danger? </label>
+        <div class="radiobuttons">
+        <input type="radio" id="dangerChoice1" name="dangerChoice" value="yes" checked> 
+        <label for="yes">Yes</label>
+        <input type="radio" id="dangerChoice2" name="dangerChoice" value="maybe">
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="dangerChoice3" name="dangerChoice" value="no">
+        <label for="no">No</label>
+        </div> 
+        </label><br><br> 
+        
+    <!-- Additional Info -->
+        <label> Additional Information/Comments:
+            <input type="textarea" name="comments"> 
+        </label><br><br>
+        
+    <!-- Form Submission -->
+        <label> <input type="button" value="Submit" class="sbutton">
+        <form target="sbutton" action="/thanks.html" method="post" onSubmit="window.open('about:blank', 'sbutton','width=60%,height=60%');">
+        </label>
+    </section>
     
-<!-- Additional Info -->
-    <label> Additional Information/Comments:
-        <input type="textarea" name="comments"> 
-    </label><br><br>
-    
- <!-- Form Submission -->
-    <label> <input type="button" value="Submit" class="sbutton">
-      <form target="sbutton" action="/thanks.html" method="post" onSubmit="window.open('about:blank', 'sbutton','width=60%,height=60%');">
-    </label>
-    
-    
+    <footer> 
+        <section>
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <ul class="contactlist">
+                    <li><a href="#"><img src="images/Facebook.png" alt="Facebook Icon"></a></li>
+                    <li><a href="#"><img src="images/Twitter.png" alt="Twitter Icon"></a></li>
+                </ul>
+            </div>
+        </section>
+            <div>
+                <p id="address">Weather Now Address:<br>100 N 255 E<br> Preston, Idaho</p>
+                <img class="map" src="images/preston.png" alt="Preston, Idaho town map">
+            </div>
+        &copy;<span id="theyear"></span>| Bryant Cook | Vernal, Utah | <p id="date"></p>
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/index.js"></script>    
 </body>
 </html>
