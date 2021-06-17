@@ -1,0 +1,51 @@
+header, main, footer {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h2 {
+    color:royalblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main section {
+    margin-left:25px;
+    margin-top: 2%;
+    background-color:rgba(178, 166, 230, 0.753)
+}
+
+footer {
+    border-top: 1px solid #444;
+    padding-top: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+}
+
+section img {
+    width: 100%;
+    box-shadow: #999;
+}
+
+section birthdate {
+    display: block;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+section birthplace {
+    display: block;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+}
+
+section {
+    background-color:rgb(rgba(178, 166, 230, 0.753));
+}
+
