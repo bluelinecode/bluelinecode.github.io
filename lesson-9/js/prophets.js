@@ -16,8 +16,8 @@ fetch(requestURL)
         let dob= document.createElement('birthdate');
         let img = document.createElement('img');
 
-        birthplace.innerHTML = `${prophet.birthplace}`;
-        dob.innerHTML = `${prophet.birthdate}`;
+        birthplace.innerHTML = `Place of Birth: ${prophet.birthplace}`;
+        dob.innerHTML = `Date of birth: ${prophet.birthdate}`;
 
         h2.innerHTML = `${prophet.name} <span> ${prophet.lastname}</span>`;
         img.setAttribute('src', prophet.imageurl);
