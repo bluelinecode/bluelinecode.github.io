@@ -222,3 +222,14 @@ nav {
 .responsive li {
 	display: block;
 }
+
+main section{
+    max-width: 600px;
+    margin: .5rem auto;
+    border: 1px solid rgb(191, 228, 230);
+    background-color: rgb(191, 228, 230);
+}
+
+section h1 {
+    color:royalblue;
+}
