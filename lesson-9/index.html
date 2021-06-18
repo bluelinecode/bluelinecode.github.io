@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>The Weather Site</title>
+</head>
+<body>
+    <header>
+        <img src="images/Rainumbrella.png" alt="weather icon">
+        <section class="headings">
+            <h1>Weather Now</h1>
+            <div class="motto">Weather when you need it!</div>
+        </section>
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="https://bluelinecode.github.io/">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-9/prophets.html">Prophets</li>
+                <li><a href="https://bluelinecode.github.io/lesson-9/wireframes.html">Wireframes</a></li>
+            </ul>
+        </nav>
+
+    </main>
+    <footer> 
+        <section>
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <ul class="contactlist">
+                    <li><a href="#"><img src="images/Facebook.png" alt="Facebook Icon"></a></li>
+                    <li><a href="#"><img src="images/Twitter.png" alt="Twitter Icon"></a></li>
+                </ul>
+            </div>
+        </section>
+           <!-- <div class="map">
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=preston%20idaho&key=AIzaSyDnVRU_Sc3O6gs-3pzRJf9SW2sGU3Jegik">
+                </iframe>
+            </div> -->
+            <div>
+                <p id="address">Weather Now Address:<br>100 N 255 E<br> Preston, Idaho</p>
+                <img class="map" src="images/preston.png" alt="Preston, Idaho town map">
+            </div>
+        &copy;<span id="theyear"></span>| Bryant Cook | Vernal, Utah | <p id="date"></p>
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
