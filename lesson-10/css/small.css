@@ -37,6 +37,7 @@ h1 h2 h3 {
     display: flex;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .hero h3 {
@@ -153,6 +154,10 @@ justify-content:center;
     font-family: 'Nunito Sans', sans-serif;
     margin: 0 auto;
 	max-width: 760px;
+}
+
+.contact {
+    text-align: center;
 }
 
 .map {
