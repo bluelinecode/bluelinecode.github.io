@@ -9,7 +9,7 @@ document.getElementById("date").innerHTML = d;
 
 // Attempting to lazy load here
 
-const imagesToLoad = document.querySelectorAll("img{data-src]");
+const imagesLoad = document.querySelectorAll("img[data-src]");
 
 const loadImages = (Image) => {
     Image.setAttribute("src", Image.getAttribute("data-src"));
@@ -32,11 +32,11 @@ const loadImages = (Image) => {
          });
      }, imgOptions);
 
-     imagesToLoad.forEach((img)=>{
+     imagesLoad.forEach((img)=>{
          imgObserver.observe(img);
      });
  } else{
-     imagesToLoad.forEach((img)=>{
+     imagesLoad.forEach((img)=>{
          loadImages(img);
      });
  }

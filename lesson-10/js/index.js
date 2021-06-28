@@ -36,8 +36,6 @@ fetch(apiURL)
     desc.innerHTML = `<strong>${desc.toUPPERCase}</strong>`;
     const windspeed = document.querySelector('#windspeed');
     windspeed.textContent = jsObject.wind.speed;
-    const precipitation = document.querySelector('#precipitation');
-    //precipitation.textContent = jsObject.
     const humidity = document.querySelector('#humidity');
     humidity.textContent = jsObject.main.humidity;
     console.log(desc[5]); // this shows each letter of what I need.... How to get the whole word?

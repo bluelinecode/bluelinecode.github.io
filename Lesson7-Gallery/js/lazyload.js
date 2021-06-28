@@ -1,5 +1,4 @@
-//Get all images on the page with data-src
-const imagesToLoad = document.querySelectorAll ("img[data-src]");
+let imagesToLoad = document.querySelectorAll ("img[data-src]");
 
 
 const loadImages = (image) => {
