@@ -13,10 +13,10 @@ fetch(apiURL)
     temperature.textContent = jsObject.main.temp;
     const currently = document.querySelector('#currently');
     const desc = jsObject.weather[0].description;
-    currently.innerHTML = `<strong>${desc.toUPPERCase()}</strong>`;
+    currently.innerHTML = `<strong>${desc}</strong>`;
 
     const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     document.getElementById('imagesrc').textContent = imagesrc;
     document.getElementById('icon').setAttribute('src', imagesrc);
-    document.getElementById('icon').setAttribute('alt', desc.toUPPERCase());
+    document.getElementById('icon').setAttribute('alt', desc);
  });

@@ -114,9 +114,19 @@ picture img {
     border: 1px solid;
     filter: blur(0em);
     transition: filter 2s;
+    padding: 5px;
+    
 }
 
 img[data-src] {
     filter: blur(0.2em);
+}
+
+.column1:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.column:hover {
+    box-shadow: 0 0 50px #333;
 }
 
