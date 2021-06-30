@@ -228,6 +228,7 @@ main section{
     margin: .5rem auto;
     border: 1px solid rgb(191, 228, 230);
     background-color: rgb(191, 228, 230);
+    text-align: center;
 }
 
 section h1 {
