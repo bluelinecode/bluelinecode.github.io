@@ -30,17 +30,21 @@ fetch(apiURL)
     console.log(jsObject);
     const temperature = document.querySelector('#temperature');
     temperature.textContent = jsObject.main.temp;  
+
     // const currently = document.querySelector('#currently');
     // currently.textContent = jsObject.weather.description;
-    const desc = jsObject.weather[0].description; //considering this instead of 'currently'
-    desc.innerHTML = `<strong>${desc.toUPPERCase}</strong>`;
+    const desc = document.querySelector('#desc'); //considering this instead of 'currently'
+    desc.innerHTML = jsObject.weather[0].description;
+
     const windspeed = document.querySelector('#windspeed');
     windspeed.textContent = jsObject.wind.speed;
+
     const humidity = document.querySelector('#humidity');
     humidity.textContent = jsObject.main.humidity;
     console.log(desc[5]); // this shows each letter of what I need.... How to get the whole word?
     // const windchill = docuemnt.querySelector('#windchill');
     //where do I find windchill????
+
     
 
 
