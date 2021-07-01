@@ -179,7 +179,6 @@ justify-content:center;
     border: 2px solid rgb(0, 0, 0);
     color:ivory;
     background-color:grey;
-    display: flex;
     justify-content: center;
     text-align: center;
 }
