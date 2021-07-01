@@ -42,15 +42,14 @@ fetch(apiURL)
     const humidity = document.querySelector('#humidity');
     humidity.textContent = jsObject.main.humidity;
     console.log(desc[5]); // this shows each letter of what I need.... How to get the whole word?
-    // const windchill = docuemnt.querySelector('#windchill');
-    //where do I find windchill????
-
-    
 
 
-
-    const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    document.getElementById('imagesrc').textContent = imagesrc;
-    document.getElementById('icon').setAttribute('src', imagesrc);
-    document.getElementById('icon').setAttribute('alt', desc.toUPPERCase());
+    // const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+    // document.getElementById('imagesrc').textContent = imagesrc;
+    // document.getElementById('icon').setAttribute('src', imagesrc);
+    // document.getElementById('icon').setAttribute('alt', desc.toUPPERCase());
  });
+
+
+
+  
