@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Now is a site for infromation gathering concerning the weather occurences in the state of Idaho.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Weather Now</title>
+</head>
+<body>
+    <header>
+        <img src="images/Rainumbrella.png" alt="weather icon">
+        <section class="headings">
+            <h1>Weather Now</h1>
+            <div class="motto">Weather when you need it!</div>
+        </section>
+
+
+    </header>
+    <main>
+        <div class="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="https://bluelinecode.github.io/">Home</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/preston.html">Preston</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/sodasprings.html">Soda Springs</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+
+
+        </nav>
+        <h2 id="preston">Preston, Idaho</h2>
+        <div class="hero">
+            <!--<img src="images/tetons.jpg" alt="Photo by Mariana Bobina from Pexels">-->
+            <picture>
+                <!-- <img src="../lesson-10/images/Prestonsmall.jpeg" media="(min-width: 700px) and (max-width: 799px)" alt="Preston Field">
+                <img src="../lesson-10/images/Prestonmed.jpg" media="(min-width: 800px) and (max-width: 2000px)" alt="Preston Field"> -->
+            <img class="heroimg" src="../lesson-10/images/Prestonlarge.jpg" alt="Preston Field"/>
+            </picture>
+            <aside>
+                <div  class="summarybox">
+                    <h3 class="wshead">Weather Summary</h3>
+                        <ul class="wslist">
+                            <li>Currently: <span id="desc"></span></li>
+                            <li>Temperature: <span id="temperature"></span>&deg;F</li>
+                            <li>Wind Speed: <span id="windspeed"></span></li>
+                            <li>Humidity: <span id="humidity"></span></li>
+                            <li>Windchill: <span id="windchill"></span></li>
+                        </ul>
+                </div>
+            </aside> 
+        </div>
+        <h3 class="forecasthead">Five Day Forecast</h3>
+        <section class="fiveday">
+            <ul class="forecast">
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+            </ul>             
+        </section>
+        
+        <!-- <div class="event">
+            <img src="" alt="" class="eventimg"> -->
+        <div class="article">
+            <h3>Summer Hiking</h3>
+            <p>There are many great summer hikes in the area surrounding Preson, Idaho! As the snow melts off, please be cautious around rivers and streams. </br></br>
+                If you are looking for a great moderate hike, check out the Caribou-Targhee National Forest for multiple day hikes. A popular mention is the Willow Flats Spring Trail which takes approximately three and a half hours and consists of 4.8 miles of moderate hiking. This trail is lightly trafficked and has many beautiful wildflowers and birds to see along the way. Dogs are also welcome, but must be leashed. </br></br>
+                Additionally, the Maple Creek Spring hike is a less trafficked hike requiring moderate abilities. It is also located in the Cariboue-Targhee National Forest and offers amazing views that few have been able to partake of. This hike is about 6 miles round trip and does offer a view of Preston from a small hill. </br></br>
+                If you are looking to add a little water to your exploration, check out the Oneida Narrows Paddle Route located on the Bear River. This is approximately a 4.8 mile trip and will give you a thrilling taste of what it was like to explore the wild west.</br></br>
+                Last, but not least, get out there and explore! Take a fly rod and find a secluded stream that Idaho has plenty of! Take the family and explore the vast vegitation in the area. There is truly nowhere to go wrong. Happy Hiking!</br></br>
+            </p>
+            <img class="articleimg" src="images/hiking.jpg" alt="Man hiking - Photo by Andrei Tanase from Pexels">
+        </div>
+    </main>
+    <footer> 
+        <section>
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <ul class="contactlist">
+                    <li><a href="#"><img src="images/Facebook.png" alt="Facebook Icon"></a></li>
+                    <li><a href="#"><img src="images/Twitter.png" alt="Twitter Icon"></a></li>
+                </ul>
+                <p>Weather content provided by <a href="https://OpenWeatherMap.org">OpenWeatherMap</a></p>
+            </div>
+        </section>
+            <div>
+                <p id="address">Weather Now Address:<br>100 N 255 E<br> Preston, Idaho</p>
+                <img class="map" src="images/preston.png" alt="Preston, Idaho town map">
+            </div>
+        &copy;<span id="theyear"></span>| Bryant Cook | Vernal, Utah | <p id="date"></p>
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="./js/windchill.js"></script>
+</body>
+</html>

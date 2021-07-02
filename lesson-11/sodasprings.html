@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Now is a site for infromation gathering concerning the weather occurences in the state of Idaho.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Weather Now</title>
+</head>
+<body>
+    <header>
+        <img src="images/Rainumbrella.png" alt="weather icon">
+        <section class="headings">
+            <h1>Weather Now</h1>
+            <div class="motto">Weather when you need it!</div>
+        </section>
+
+
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="https://bluelinecode.github.io/">Home</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/preston.html">Preston</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/sodasprings.html">Soda Springs</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://bluelinecode.github.io/lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+
+
+        </nav>
+        <h2 id="preston">Soda Springs, Idaho</h2>
+        <div class="hero">
+            <picture>
+            <img class="heroimg" src="" alt=""/>
+            </picture>
+            <aside>
+                <div  class="summarybox">
+                    <h3 class="wshead">Weather Summary</h3>
+                        <ul class="wslist">
+                            <li>Currently: <span id="desc"></span></li>
+                            <li>Temperature: <span id="temperature"></span>&deg;F</li>
+                            <li>Wind Speed: <span id="windspeed"></span></li>
+                            <li>Humidity: <span id="humidity"></span></li>
+                            <li>Windchill: <span id="windchill"></span></li>
+                        </ul>
+                </div>
+            </aside> 
+        </div>
+        <h3 class="forecasthead">Five Day Forecast</h3>
+        <section class="fiveday">
+            <ul class="forecast">
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+
+                <li class="forecastDay">
+                    <div class="day"></div>
+                    <div class="temp"></div>
+                    <img src="" alt="" class="fivedayimg">
+                </li>
+            </ul>             
+        </section>
+        
+        <!-- <div class="event">
+            <img src="" alt="" class="eventimg"> -->
+        <div class="article">
+            <h3>************NEW TITLE**************</h3>
+            <p>******New Paragraph******
+            </p>
+            <img class="articleimg" src="images/" alt="">
+        </div>
+    </main>
+    <footer> 
+        <section>
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <ul class="contactlist">
+                    <li><a href="#"><img src="images/Facebook.png" alt="Facebook Icon"></a></li>
+                    <li><a href="#"><img src="images/Twitter.png" alt="Twitter Icon"></a></li>
+                </ul>
+                <p>Weather content provided by <a href="https://OpenWeatherMap.org">OpenWeatherMap</a></p>
+            </div>
+        </section>
+            <div>
+                <p id="address">Weather Now Address:<br>100 N 255 E<br> Preston, Idaho</p>
+                <img class="map" src="images/preston.png" alt="Preston, Idaho town map">
+            </div>
+        &copy;<span id="theyear"></span>| Bryant Cook | Vernal, Utah | <p id="date"></p>
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="./js/windchill.js"></script>
+</body>
+</html>
