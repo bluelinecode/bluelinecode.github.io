@@ -223,3 +223,16 @@ nav {
 .responsive li {
 	display: block;
 }
+
+.events {
+    text-align: center;
+    border: 10px solid var(--primary-color);
+    border-radius: 24px;
+    box-shadow: 0 0 8px 3px #a3a3a3;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.events ul {
+    list-style-type: none;
+}

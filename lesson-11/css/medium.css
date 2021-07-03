@@ -86,5 +86,14 @@
 			height: auto;
 		}
 
+		.fiveday ul {
+			list-style-type: none;
+			display: flex;
+		}
+
+		.fiveday ul li {
+			padding: 10px;
+		}
+
 
 }
