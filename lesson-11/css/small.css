@@ -4,6 +4,12 @@ body {
     margin: auto 0;
 }
 
+main {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
 header {
     background-color: rgb(196, 240, 225);
     padding: 5px 0;
@@ -131,6 +137,18 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+/* .footaddress {
+    display: grid;
+}
+
+.footaddress p {
+    grid-column: 1;
+}
+
+.footaddress img {
+    grid-column: 2;
+} */
 
 #address {
     display: flex;
