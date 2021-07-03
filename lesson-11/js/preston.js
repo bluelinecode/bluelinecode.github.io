@@ -63,7 +63,7 @@ fetch(forecastURL)
           if (town.name === "Preston") {
             const townEvents = document.querySelector(".events");
             const eventList = document.createElement("ul");
-            eventList.classList.add("event-info");
+            eventList.classList.add("eventsinfo");
     
             const events = town.events;
     
