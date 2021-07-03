@@ -40,10 +40,6 @@ h1 h2 h3 {
     margin: 0 auto;
 }
 
-.hero h3 {
-    justify-content: 2;
-}
-
 .summarybox {
     align-items: center;
     list-style-type: none;
