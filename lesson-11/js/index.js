@@ -131,7 +131,7 @@ document.getElementById("date").innerHTML = d;
 
 //Gallery 
 
-const mainnav = document.querySelector('.navigation');
+// const mainnav = document.querySelector('.navigation');
 
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')}; 
 
