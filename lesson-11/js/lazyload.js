@@ -6,7 +6,7 @@ const loadImages = (image) => {
     image.onload = () => {
         image.removeAttribute("data-src");
     };
-}
+};
 
 const imgOptions = {
     threshold: 1,
@@ -23,7 +23,7 @@ if ('IntersectionObserver' in window) {
     });
     }, imgOptions);
 
-    imagesToLoad.forEach(img => {
+    imagesToLoad.forEach((img) => {
         imgObserver.observe(img);
     });
 } 
