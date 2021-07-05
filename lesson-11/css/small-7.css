@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(223, 223, 223);
+    padding: 0;
+    margin: auto 0;
+}
+
+header {
+    background-color: rgb(196, 240, 225);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  'Merriweather', serif;
+}
+
+header img {
+    width: 40px;
+    height: auto;
+    margin: 2%;
+}
+
+h1 h2 h3 {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 auto;
+	max-width: 760px;
+	background-color: rgb(250, 194, 184);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 950px;
+    justify-items: center;
+    padding-left: 23%;
+    padding-right: 23%;
+}
+
+footer {
+    background-color:rgb(196, 240, 225);
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#address {
+    display: flex;
+justify-content:center;
+    height: auto;
+}
+
+.contactlist {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 auto;
+	max-width: 760px;
+}
+
+.map {
+    margin: 10px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+picture img {
+    border: 1px solid;
+    filter: blur(0em);
+    transition: filter 2s;
+    padding: 5px;
+    
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+.column1:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.column:hover {
+    box-shadow: 0 0 50px #333;
+}
+
