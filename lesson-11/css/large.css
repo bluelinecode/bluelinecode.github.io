@@ -1,12 +1,8 @@
 @media only screen and (min-width: 60em) {
     .summarybox{
-        position: absolute;
         opacity: 0.8;
         top: 310px;
-        left: 360px;
         box-shadow: 3px 0 5px 3px #6e6464;
-        display: grid;
-        grid-template-columns: 1fr;
         padding: 0.5rem 0 0 1rem;
         background-color: rgb(250, 194, 184);
     }
