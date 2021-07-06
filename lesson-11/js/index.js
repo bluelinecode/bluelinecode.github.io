@@ -78,7 +78,7 @@ fetch(requestURL)
         card1.appendChild(rain1);
         card1.appendChild(img1);
 
-        document.querySelector('cards').append(card1);
+        document.querySelector('div.cards').append(card1);
     });   
 
 // Soda Springs
