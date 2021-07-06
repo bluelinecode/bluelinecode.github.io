@@ -258,3 +258,16 @@ section.form {
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+/* gallery page */
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+.column1:hover {
+    box-shadow: 0 0 100px rgb(20, 20, 20);
+}
+
+.column:hover {
+    box-shadow: 0 0 100px rgb(20, 20, 20);
+}
