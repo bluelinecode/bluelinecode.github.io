@@ -10,6 +10,10 @@ header h1 {
     font-family:  'Castoro', serif;
 }
 
+.active {
+    color: black;
+}
+
 .heroimg {
     display: block;
     margin-left: auto;
@@ -30,6 +34,11 @@ nav {
 nav li {
     display: inline;
     padding: 1rem;   
+}
+
+nav li a {
+    color:#EDDDD4;
+    font-size: 30px;
 }
 
 nav a:hover {
