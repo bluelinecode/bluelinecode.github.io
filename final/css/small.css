@@ -76,6 +76,11 @@ h2 {
     color: #772E25;
 }
 
+.attributions {
+    text-align: center;
+    list-style-type: none;
+}
+
 .comp1 {
     text-align: center;
 }

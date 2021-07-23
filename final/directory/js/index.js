@@ -1,3 +1,6 @@
+document.querySelector('#theyear').textContent = new Date().getFullYear();
+document.querySelector('#lastmod').textContent = document.lastModified; 
+
 const requestURL = '../vernallocal.json';
 
 fetch(requestURL)
