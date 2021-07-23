@@ -22,7 +22,7 @@
   <main>
     <nav>
       <ul class="navigation">
-        <li><a class="hamburger" href="#">Menu</a></li>
+        <li><a class="ham" href="#">Menu</a></li>
         <li><a class="active" href="https://bluelinecode.github.io/final/home">Home</a></li>
         <li><a href="https://bluelincode.github.io/final/vernalcity/vernalcity">City</a></li>
         <li><a href="https://bluelincode.github.io/final/join/join">Join</a></li>
@@ -31,8 +31,8 @@
       </ul>
     </nav>
     <aside>
-      <div  class="threeday">
-          <h3 class="wshead">3 Day Forecast</h3>
+      <div  class="summarybox">
+          <h3 class="wshead">Weather Summary</h3>
               <ul class="wslist">
                   <li>Currently: <span id="desc"></span></li>
                   <li>Temperature: <span id="temperature"></span>&deg;F</li>
@@ -40,6 +40,7 @@
               </ul>
       </div>
   </aside> 
+</div>
   <div class="weatheralert">
     Weather Alert Here - closeable
   </div>
@@ -95,7 +96,7 @@
       </div>
     </section>
     <div class="cta">
-      <a href="https://bluelincode.github.io//final/join.html" target="_self">
+      <a href="https://bluelinecode.github.io/final/join/join.html" target="_self">
         <input type="button" class="button" value="Join the Chamber of Commerce Now!" />
       </a>
     </div>
@@ -118,8 +119,10 @@
           <img src="../final/images/Twitter.png" alt="twitter logo">
         </a>
       </section>
+      &copy;<span id="theyear"></span>| Bryant Cook | Vernal, Utah | <p id="date"></p>
+      <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
-    <script src="../final/js/index.js"></script>
+    <script src="js/index.js"></script>
 </main>
 </body>
 
