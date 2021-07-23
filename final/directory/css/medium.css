@@ -1,0 +1,30 @@
+@media only screen and (min-width: 32.5em) {
+
+    .cards {
+        margin: 0 auto;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "choicehealth basinsports troutcreek"
+          "kooke campbell bloomers"
+          ". blush ."; 
+      }
+
+    .grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "choicehealth basinsports troutcreek"
+          "kooke campbell bloomers"
+          ". blush ."; 
+      }
+
+    .list {
+        display: block;
+        list-style: disc;
+    }
+}

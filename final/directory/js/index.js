@@ -1,3 +1,5 @@
+const requestURL = '../vernallocal.json';
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -5,32 +7,55 @@ fetch(requestURL)
 
   .then(function (jsonObject) {
     console.table(jsonObject);
-    const towns = jsonObject['towns'];
+    const businesses = jsonObject['businesses'];
 
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let h3 = document.createElement('h3');
-        let year = document.createElement('p');
-        let population = document.createElement('p');
-        let rain = document.createElement('p');
-        let img = document.createElement('img');        
+        let businessName = document.createElement('h2');
+        let contactInfo = document.createElement('p');
+        let website = document.createElement('p');
+        let logo = document.createElement('img');        
 
 
-        h2.innerHTML = towns[6].name;
-        h3.innerHTML = towns[6].motto;
-        year.textContent = 'Year Founded: ' + towns[6].yearFounded;
-        population.textContent = 'Population: ' +towns[6].currentPopulation;
-        rain.textContent = 'Annual Rain Fall: ' + towns[6].averageRainfall;
-        img.setAttribute('src', 'images/' +towns[6].photo);
-        img.setAttribute('alt', 'Preston');
-        img.setAttribute('class', 'picture');
-
-        card.appendChild(h2);
-        card.appendChild(h3);
-        card.appendChild(year);
-        card.appendChild(population);
-        card.appendChild(rain);
-        card.appendChild(img);
-
+       for (let i = 0; i < businesses.length; i++) {
+           const element = businesses[i];
+          console.log(element);
+          let card = document.createElement('section');
+          let businessName = document.createElement('h2');
+          let contactInfo = document.createElement('p');
+          let website = document.createElement('p');
+          let logo = document.createElement('img'); 
+        businessName.innerHTML = businesses[i].businessName;
+        contactInfo.textContent = 'Phone Number: ' + businesses[i].contactInfo;
+        website.textContent = 'Website: ' +businesses[i].website;
+        logo.setAttribute('src', 'images/' +businesses[i].logo);
+        logo.setAttribute('alt', businesses[i].businessName+' logo');
+        logo.setAttribute('class', 'picture');
+       
+        card.appendChild(businessName);
+        card.appendChild(contactInfo);
+        card.appendChild(website);
+        card.appendChild(logo);
+        card.classList.add("businessCard");
+        
         document.querySelector('div.cards').append(card);
+       }
+
     });
+
+
+    function listview() {
+        let cards = document.getElementsByClassName("businessCard");
+                cards.forEach(classList.remove("grid"));
+                cards.forEach(classList.add("list"));
+
+
+    }
+
+    
+    function gridview() {
+        let cards = document.getElementsByClassName("businessCard");
+        cards.forEach(classList.remove("list"));
+        cards.forEach(classList.add("grid"));
+
+
+    };
