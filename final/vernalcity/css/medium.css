@@ -1,41 +1,100 @@
 @media only screen and (min-width: 32.5em) {
-    .vernalimgs {
-        text-align: center;
-    }
-      
-    .highlight {
-        display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    }
-      
-    .comp1 {
-        grid-column-start: col-start 1;
-    }
-      
-    .comp2 {
-        grid-column-start: col-start 2;
-    }
-      
-    .comp3 {
-        grid-column-start: col-start 3;
+    .upcoming {
+        display: inline-block;
+        background-color: #808080;
+        border: none;
+        margin-top: 2%;
+        padding: 1%;
+        width: 90%;
+        height: 200px;
+        overflow-y: scroll;
     }
 
-    .businesslogos {
+    .container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px ; 
+        grid-template-areas: 
+          "upcoming history history"; 
+      }
+      .upcoming { grid-area: upcoming; }
+      .history { grid-area: history; }
+      /* .cityimg { grid-area: cityimg; }
+      .historyp { grid-area: historyp; } */
+
+      .history {
+        display: inline-block;
+        background-color: #808080;
+        border: none;
+        margin-top: 2%;
+        padding: 1%;
+        width: 90%;
+        height: 200px;
+        overflow-y: scroll;
+    }
+
+    
+    ::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border: 1px solid #197278;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #772e25;
+        border-radius: 15px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #EDDDD4;
+    }
+
+    .imgcontainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .busone {
-        margin: auto;
-    }
-    
-    .bustwo {
-        margin: auto;
-    }
-    
-    .busthree {
-        margin: auto;
-    }
-}
+        grid-template-rows: 1fr 1fr;
+        gap: 1% 1%;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "imgone imgtwo imgthree"
+          "imgfour imgfive imgsix";
+      }
+      
+      .imgone { 
+          grid-area: imgone; 
+          margin: 0 auto;
+        }
+      
+      .imgtwo { 
+          grid-area: imgtwo;
+          margin: 0 auto;
+        }
+      
+      .imgthree { 
+          grid-area: imgthree;
+          margin: 0 auto;
+        }
+      
+      .imgfour { 
+          grid-area: imgfour;
+          margin: 0 auto; 
+        }
+      
+      .imgfive { 
+          grid-area: imgfive;
+          margin: 0 auto; 
+        }
+      
+      .imgsix { 
+          grid-area: imgsix;
+          margin: 0 auto; 
+        }
+
+      
+
+}    
