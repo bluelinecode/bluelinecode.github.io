@@ -1,0 +1,203 @@
+body {
+    background-color: #a09e9e;
+}
+
+header h1 {
+    background-color: #197278;
+    color: #EDDDD4;
+    text-align: center;
+    font-size: 30px;
+    font-family:  'Castoro', serif;
+}
+
+.heroimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+  
+nav {
+    background-color: #C44536;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+nav li {
+    display: inline;
+    padding: 1rem;   
+}
+
+nav a:hover {
+    color: black;
+}
+
+.upcoming {
+    display: inline-block;
+    border: none;
+    margin-top: 2%;
+    padding: 1%;
+    width: 20%;
+    height: 200px;
+    overflow-y: scroll;
+    /* text-align: center;
+    background-color: darkslategray;
+    max-width: 80%;
+    margin: 0 auto; */
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid #197278;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #772e25;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EDDDD4;
+}
+
+.upcoming h3, h4 {
+    color: #EDDDD4;
+}
+
+.history {
+    
+}
+
+.cta a input {
+    background-color: #C44536;
+    margin: 5%;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contactinfo h4 a {
+    color: #EDDDD4;
+}
+
+.contactinfo h3 {
+    color: #EDDDD4;
+}
+  
+li a {
+      color: #EDDDD4;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    background-color: darkslategray;
+    color: 283D3B;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    max-width:50%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+  
+p {
+    font-size: 16px;
+    font-family: 'Nunito', serif;
+}
+  
+footer {
+    background-color: #197278;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+  
+footer h3 {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+  
+.threeday {
+    align-items: center;
+    list-style-type: none;
+    background-color: darkslategray;
+    display: grid;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.threeday h3 {
+    color: #EDDDD4;
+}
+
+.wslist {
+    list-style-type: none;
+    text-align: center;
+}
+
+.wshead {
+    margin: 0%;
+    text-align: center;
+}
+
+.companyheader h2 {
+    color: #EDDDD4;
+}
+/* .vernalimgs {
+    text-align: center;
+}
+  
+.highlight {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+}
+  
+.comp1 {
+    grid-column-start: col-start 1;
+}
+  
+.comp2 {
+    grid-column-start: col-start 2;
+}
+  
+.comp3 {
+    grid-column-start: col-start 3;
+} */
+
+  
+.cta {
+    text-align: center;
+}
+  
+.purpose p {
+    text-align: center;
+}
+
+.purpose h2 {
+    color: #EDDDD4;
+}
