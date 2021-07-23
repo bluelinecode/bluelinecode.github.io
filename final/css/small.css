@@ -22,16 +22,16 @@ header h1 {
 nav {
     background-color: #C44536;
     text-align: center;
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
     font-family: 'Nunito Sans', sans-serif;;
 }
 
 nav li {
     display: inline;
-    padding: 1rem;
+    padding: 1rem;   
 }
-  
+
 nav a:hover {
     color: black;
 }
@@ -39,9 +39,11 @@ nav a:hover {
 .upcoming {
     text-align: center;
     background-color: darkslategray;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.upcoming h3 {
+.upcoming h3, h4 {
     color: #EDDDD4;
 }
 
@@ -92,6 +94,17 @@ nav a:hover {
     background-color: #C44536;
     margin: 5%;
     height: 45px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contactinfo h4 a {
+    color: #EDDDD4;
+}
+
+.contactinfo h3 {
+    color: #EDDDD4;
 }
   
 li a {
@@ -126,6 +139,7 @@ h4 {
   
 p {
     font-size: 16px;
+    font-family: 'Nunito', serif;
 }
   
 footer {
@@ -146,6 +160,8 @@ footer h3 {
     background-color: darkslategray;
     display: grid;
     justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .threeday h3 {
