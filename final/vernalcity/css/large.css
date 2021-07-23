@@ -1,0 +1,42 @@
+@media only screen and (min-width: 60rem) {
+    .imgcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1% 1%;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "imgone imgtwo imgthree"
+          "imgfour imgfive imgsix";
+      }
+      
+      .imgone { 
+          grid-area: imgone; 
+          margin: 0 auto;
+        }
+      
+      .imgtwo { 
+          grid-area: imgtwo;
+          margin: 0 auto;
+        }
+      
+      .imgthree { 
+          grid-area: imgthree;
+          margin: 0 auto;
+        }
+      
+      .imgfour { 
+          grid-area: imgfour;
+          margin: 0 auto; 
+        }
+      
+      .imgfive { 
+          grid-area: imgfive;
+          margin: 0 auto; 
+        }
+      
+      .imgsix { 
+          grid-area: imgsix;
+          margin: 0 auto; 
+        }
+}

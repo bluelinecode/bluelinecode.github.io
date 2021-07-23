@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../final/css/small.css">
-  <link rel="stylesheet" href="../final/css/medium.css">
-  <link rel="stylesheet" href="../final/css/large.css">
-  <link rel="stylesheet" href="../final/css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Nunito+Sans:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <header>
     <section>
       <h1>Vernal City Chamber of Commerce</h1>
-      <img class="heroimg" src="../final/images/splitmountainwide.png" alt="split mountain range">
+      <img class="heroimg" src="../images/splitmountainwide.png" alt="split mountain range">
     </section>
   </header>
   <main>
@@ -25,74 +25,70 @@
         <li><a class="hamburger" href="#">Menu</a></li>
         <li><a href="https://bluelinecode.github.io/final/home.html">Home</a></li>
         <li><a href="https://bluelincode.github.io/final/vernalcity.html">City</a></li>
-        <li><a href="https://bluelincode.github.io//final/join.html">Join</a></li>
+        <li><a class="active" href="https://bluelincode.github.io//final/join.html">Join</a></li>
         <li><a href="https://bluelincode.github.io//final/directory.html">Directory</a></li>
         <li><a href="https://bluelincode.github.io//final/contact.html">Contact</a></li>
       </ul>
     </nav>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" required><br>
+    <h2>Vernal Chamber of Commerce Application Form</h2>
+    <div class="application">
+        <form>
+            <label for="fname">First name:*</label><br>
+            <input type="text" id="fname" name="fname" required><br>
 
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" required><br>
+            <label for="lname">Last name:*</label><br>
+            <input type="text" id="lname" name="lname" required><br>
 
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title"><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title"><br>
 
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" required><br>
+            <label for="email">Email:*</label><br>
+            <input type="text" id="email" name="email" required><br>
 
-        <label for="phone">Cell Phone:</label><br>
-        <input type="number" id="phone" name="phone"><br>
+            <label for="phone">Cell Phone:</label><br>
+            <input type="number" id="phone" name="phone"><br>
 
-        <label for="busname">Business Name:</label><br>
-        <input type="text" id="busname" name="busname" required><br>
+            <label for="busname">Business Name:*</label><br>
+            <input type="text" id="busname" name="busname" required><br>
 
-        <label for="busadd">Business Address:</label><br>
-        <input type="text" id="busadd" name="busadd"><br>
+            <label for="busadd">Business Address:</label><br>
+            <input type="text" id="busadd" name="busadd"><br>
 
-        <label for="busweb">Business Website:</label><br>
-        <input type="text" id="busweb" name="busweb"><br>
+            <label for="busweb">Business Website:</label><br>
+            <input type="text" id="busweb" name="busweb"><br>
 
-        <label for="busdesc">Business Description: </label><br>
-        <input type="text" id="busdesc" name="busdesc"><br>
+            <label for="busdesc">Business Description: </label><br>
+            <textarea name="busdesc" rows="10" cols="30"></textarea><br><br>
 
-       <label for="membership">Membership Selection:</label><br>
-        <input type="radio"  id="Non-Profit" name="membership" value="Non-Profit"> 
-        <label for="Non-Profit">Non-Profit ($100)</label><br>
-        
-        <input type="radio"  id="Bronze" name="membership" value="Bronze)">
-        <label for="Bronze">Bronze ($200)</label><br>
+            <label for="membership">Membership Selection:<br>(Hover over each selection for additional information)</label><br>
+            <input class="radio" type="radio"  id="Non-Profit" name="membership" value="Non-Profit"> 
+            <label for="Non-Profit"><span class="firstSpan">Non-Profit ($100)<span class="secondSpan">The Non-Profit Membership includes social media posts and tickets to our annual business summit.</span></span></label><br>
+            
+            <input type="radio"  id="Bronze" name="membership" value="Bronze)">
+            <label for="Bronze"><span class="firstSpan">Bronze ($200)<span class="secondSpan">The Bronze Membership includes social media posts, tickets for the annual business summit, business trainings, and logo placement.</span></span></label><br>
 
-        <input type="radio"  id="Silver" name="membership" value="Silver">
-        <label for="Silver">Silver ($400)</label><br>
+            <input type="radio"  id="Silver" name="membership" value="Silver">
+            <label for="Silver"><span class="firstSpan">Silver ($400)<span class="secondSpan">The Silver Membership includes social media posts, tickets for the annual business summit, business trainings, logo placement, and a directory listing.</span></span></label><br>
 
-        <input type="radio" id="Gold" name="membership" value="Gold">
-        <label for="Gold">Gold ($1000)</label><br>
-        
-        
-        <input type="submit" value="Submit">
-    </form>
-
-    <div class="cta">
-      <a href="https://bluelincode.github.io//final/join.html" target="_self">
-        <input type="button" class="button" value="Join the Chamber of Commerce Now!" />
-      </a>
+            <input type="radio" id="Gold" name="membership" value="Gold">
+            <label for="Gold"><span class="firstSpan">Gold ($1000)<span class="secondSpan">The Gold Membership includes social media posts, tickets for the annual business summit, business trainings, logo placement, a directory listing, features on the commerce site each fiscal quarter, and a thirty second radio ad for 3 months.</span></label><br><br>
+            
+            <input class="sbutton" type="submit" value="Submit">
+        </form>
     </div>
     <footer>
       <section class="contactinfo">
         <h3>Contact Information</h3>
         <h4>Office: 435-789-5555<h4>
-        <h4>Email: <a href="../final/contact.html">vernalcitycommerce@vernal.org</a></h4>
+        <h4>Email: <a href="https://bluelincode.github.io//final/contact.html">vernalcitycommerce@vernal.org</a></h4>
       </section>
       <section class="social">
         <h4>Follow Us!</h4>
         <a href="https://www.facebook.com/Vernal-Area-Chamber-of-Commerce-251700434841196/">
-          <img src="../final/images/Facebook.png" alt="facebook logo">
+          <img src="images/Facebook.png" alt="facebook logo">
         </a>
         <a href="https://www.twitter.com" alt="twitter logo">
-          <img src="../final/images/Twitter.png" alt="twitter logo">
+          <img src="images/Twitter.png" alt="twitter logo">
         </a>
       </section>
     </footer>

@@ -54,15 +54,16 @@
         background: #EDDDD4;
     }
 
-    .imgcontainer {
+     .imgcontainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1% 1%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80%;
         grid-auto-flow: row;
         grid-template-areas:
-          "imgone imgtwo imgthree"
-          "imgfour imgfive imgsix";
+          "imgone imgtwo"
+          "imgthree imgfour"
+          "imgfive imgsix";
       }
       
       .imgone { 
@@ -93,7 +94,7 @@
       .imgsix { 
           grid-area: imgsix;
           margin: 0 auto; 
-        }
+        } 
 
       
 

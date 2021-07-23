@@ -1,0 +1,41 @@
+@media only screen and (min-width: 32.5em) {
+    .vernalimgs {
+        text-align: center;
+    }
+      
+    .highlight {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    }
+      
+    .comp1 {
+        grid-column-start: col-start 1;
+    }
+      
+    .comp2 {
+        grid-column-start: col-start 2;
+    }
+      
+    .comp3 {
+        grid-column-start: col-start 3;
+    }
+
+    .businesslogos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .busone {
+        margin: auto;
+    }
+    
+    .bustwo {
+        margin: auto;
+    }
+    
+    .busthree {
+        margin: auto;
+    }
+}
