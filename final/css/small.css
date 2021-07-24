@@ -68,7 +68,7 @@ h2 {
 }
 
 .highlight {
-    gap: 3%;
+    grid-gap: 2px;
     text-align: center;
 }
 
@@ -206,7 +206,7 @@ footer h3 {
 .companyheader h2 {
     color: #EDDDD4;
 }
-  
+
 .cta {
     text-align: center;
 }
