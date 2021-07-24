@@ -22,6 +22,14 @@ header h1 {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+strong a {
+    color:#EDDDD4;
+}
+
+.atfoot {
+    color:#EDDDD4;
+}
   
 nav {
     background-color: #C44536;

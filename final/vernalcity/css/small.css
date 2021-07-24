@@ -122,6 +122,14 @@ p {
     font-size: 16px;
     font-family: 'Nunito', serif;
 }
+
+strong a {
+    color:#EDDDD4;
+}
+
+.atfoot {
+    color:#EDDDD4;
+}
   
 footer {
     background-color: #197278;
