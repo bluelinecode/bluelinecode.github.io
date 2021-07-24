@@ -218,3 +218,7 @@ footer h3 {
 .purpose h2 {
     color: #EDDDD4;
 }
+
+footer img {
+    max-width: 80%;
+}

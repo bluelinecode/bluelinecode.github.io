@@ -99,3 +99,7 @@ strong a {
 .atfoot {
     color:#EDDDD4;
 }
+
+footer img {
+    max-width: 80%;
+}

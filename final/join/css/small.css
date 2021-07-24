@@ -103,6 +103,10 @@ footer h3 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+footer img {
+    max-width: 80%;
+}
+
 .application {
     display: block;
     text-align: center;
