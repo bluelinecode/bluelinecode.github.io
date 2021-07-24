@@ -23,6 +23,10 @@
           ". blush ."; 
       }
 
+      .map {
+        margin: 0 auto;
+      }
+
     .list {
         display: block;
         list-style: disc;
