@@ -12,11 +12,11 @@
           ". blush ."; 
       }
       
-      main {
+      /* main {
         max-width: 80%;
         margin: 0 auto;
         text-align: center;
-    }
+    } */
 
     .grid {
         display: grid; 

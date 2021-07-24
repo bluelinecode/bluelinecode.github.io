@@ -42,6 +42,7 @@ nav a:hover {
 
 .upcoming {
     text-align: center;
+    margin: 0 auto;
 }
 
 .upcoming h3, h4 {
