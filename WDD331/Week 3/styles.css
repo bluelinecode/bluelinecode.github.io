@@ -1,0 +1,30 @@
+/* Variables to follow */
+body {
+  background-color: green;
+}
+
+#contactform {
+  background-color: white;
+}
+#contactform input, #contactform textarea {
+  background-color: white;
+  flex: 2;
+}
+@media (min-width: 480px) {
+  #contactform {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 800px) {
+  #contactform {
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,98 @@
+$background-color: rgb(246, 248, 228);
+$color: #DEB887;
+$header-color: #6495ED;
+$a-color: #FAEBD7;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+header {
+    background-color: $header-color;
+    text-align: right;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+@mixin header-a {
+    text-decoration: none;
+    color: $a-color;
+    font-family: 'Lora', serif;    
+}
+
+//mixin
+header nav ul li a {
+    @include header-a();
+}
+
+header nav ul li a:active {
+    color: $color;
+  }
+
+header nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+//mixin
+header h1 a {
+    @include header-a();
+}
+
+main {
+    background-color: $a-color;
+    text-align: center;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: $color;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+//sass nesting w/ variables
+
+article h2 {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: $color;
+    }
+
+    a:hover {
+        color: $header-color;
+        text-decoration: underline;
+    }
+}
+
+.post-date {
+    text-align: left;
+}
+
+.post-content {
+    width: 60%;
+    background-color: $background-color;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 60em) {
+    header {
+        float: left;
+        text-align: left;
+        height: 100%;
+    }
+}
